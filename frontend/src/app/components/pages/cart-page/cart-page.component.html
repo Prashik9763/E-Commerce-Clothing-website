@@ -8,11 +8,11 @@
 <ul>
   <li *ngFor="let cartItem of cart.items">
     <div>
-      <img [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name">
+      <img [src]="cartItem.item.imageUrl" [alt]="cartItem.item.name">
     </div>
     <div>
-      <a routerLink="/food/{{cartItem.food.id}}">
-        {{cartItem.food.name}}
+      <a routerLink="/item/{{cartItem.item.id}}">
+        {{cartItem.item.name}}
       </a>
     </div>
     <div>
@@ -27,7 +27,7 @@
     </select>
     </div>
     <div>
-      {{cartItem.price | currency}}
+      {{cartItem.price | currency:"INR"}}
     </div>
 
     <div>
@@ -39,8 +39,8 @@
 </ul>
 <div class="checkout">
   <div>
-    <div class="foods-count">{{cart.totalCount}}</div>
-    <div class="total-price">{{cart.totalPrice|currency}}</div>
+    <div class="items-count">{{cart.totalCount}}</div>
+    <div class="total-price">{{cart.totalPrice|currency:"INR"}}</div>
   </div>
 
   <a routerLink="/checkout">Proceed to Checkout</a>

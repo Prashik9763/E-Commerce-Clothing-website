@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/services/cart.service';
-import { Cart } from 'src/app/shared/models/cart'; 
+import { Cart } from 'src/app/shared/models/Cart'; 
 import { CartItem } from 'src/app/shared/models/CartItem';
 
 @Component({
@@ -19,13 +19,15 @@ export class CartPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  
   removeFromCart(cartItem:CartItem){
-    this.cartService.removeFromCart(cartItem.food.id);
+    this.cartService.removeFromCart(cartItem.item.id);
   }
 
   changeQuantity(cartItem:CartItem,quantityInString:string){
     const quantity = parseInt(quantityInString);
-    this.cartService.changeQuantity(cartItem.food.id, quantity);
+    this.cartService.changeQuantity(cartItem.item.id, quantity);
   }
 
 }
