@@ -1,5 +1,5 @@
 
-export const sample_foods: any[] = [
+export const sample_items: any[] = [
   {
     id:'1',
     name: 'Pizza Pepperoni',
@@ -8,8 +8,8 @@ export const sample_foods: any[] = [
     favorite: false,
     origins: ['Alandi'],
     stars: 4.5,
-    imageUrl: 'assets/food-1.jpg',
-    tags: ['FastFood', 'Pizza', 'Lunch'],
+    imageUrl: 'assets/item-1.jpg',
+    tags: ['FastRetail', 'Pizza', 'Lunch'],
   },
   {
     id:'2',
@@ -19,8 +19,8 @@ export const sample_foods: any[] = [
     favorite: true,
     origins: ['Dehuphata'],
     stars: 4.7,
-    imageUrl: 'assets/food-2.jpg',
-    tags: ['SlowFood', 'Lunch'],
+    imageUrl: 'assets/item-2.jpg',
+    tags: ['SlowRetail', 'Lunch'],
   },
   {
     id:'3',
@@ -30,8 +30,8 @@ export const sample_foods: any[] = [
     favorite: false,
     origins: ['Doodulgaon'],
     stars: 3.5,
-    imageUrl: 'assets/food-3.jpg',
-    tags: ['FastFood', 'Hamburger'],
+    imageUrl: 'assets/item-3.jpg',
+    tags: ['FastRetail', 'Hamburger'],
   },
   {
     id:'4',
@@ -41,8 +41,8 @@ export const sample_foods: any[] = [
     favorite: true,
     origins: ['Alandi'],
     stars: 3.3,
-    imageUrl: 'assets/food-4.jpg',
-    tags: ['FastFood', 'Fry'],
+    imageUrl: 'assets/item-4.jpg',
+    tags: ['FastRetail', 'Fry'],
   },
   {
     id:'5',
@@ -52,7 +52,7 @@ export const sample_foods: any[] = [
     favorite: false,
     origins: ['india', 'asia'],
     stars: 3.0,
-    imageUrl: 'assets/food-5.jpg',
+    imageUrl: 'assets/item-5.jpg',
     tags: ['Charholi'],
   },
   {
@@ -63,17 +63,17 @@ export const sample_foods: any[] = [
     favorite: false,
     origins: ['Dehu-phata'],
     stars: 4.0,
-    imageUrl: 'assets/food-6.jpg',
-    tags: ['FastFood', 'Pizza', 'Lunch'],
+    imageUrl: 'assets/item-6.jpg',
+    tags: ['FastRetail', 'Pizza', 'Lunch'],
   },
 ]
 
 export const sample_tags:any[] = [
   { name: 'All', count: 6 },
-  { name: 'FastFood', count: 4 },
+  { name: 'FastRetail', count: 4 },
   { name: 'Pizza', count: 2 },
   { name: 'Lunch', count: 3 },
-  { name: 'SlowFood', count: 2 },
+  { name: 'SlowRetail', count: 2 },
   { name: 'Burger', count: 1 },
   { name: 'Fry', count: 1 },
   { name: 'Soup', count: 1 },
